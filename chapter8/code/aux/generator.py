@@ -14,7 +14,7 @@ ssm = boto3.client('ssm')
 parameter_name = 'clickstream_bucket'  
 response = ssm.get_parameter(Name=parameter_name)
 bucket_name = response['Parameter']['Value']
-number_of_events_per_request = 2
+number_of_events_per_request = 10
 # Set up AWS S3 client
 s3 = boto3.client('s3')
 #bucket_name = 'chapter-8-clickstream-14509180'
