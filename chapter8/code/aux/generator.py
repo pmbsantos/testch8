@@ -17,7 +17,7 @@ bucket_name = response['Parameter']['Value']
 number_of_events_per_request = 10
 # Set up AWS S3 client
 s3 = boto3.client('s3')
-#bucket_name = 'chapter-8-clickstream-14509180'
+
 
 countries_samples = {
 '1':0.07,
