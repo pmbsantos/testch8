@@ -18,7 +18,7 @@ job.init(args['JOB_NAME'], args)
 ssm = boto3.client('ssm')
 
 # Retrieve the value of the parameter containing the bucket_name
-parameter_name = 'clickstream_bucket2'  
+parameter_name = 'clickstream_bucket'  
 response = ssm.get_parameter(Name=parameter_name)
 bucket_name = response['Parameter']['Value']
 
